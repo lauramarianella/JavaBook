@@ -16,7 +16,7 @@ public class _08_01_PassTwoDimensionalArray {
   }
   
   public static int[][] getArray() {
-    // Create a Scanner
+    /*// Create a Scanner
     Scanner input = new Scanner(System.in);
     
     // Enter array values
@@ -27,6 +27,21 @@ public class _08_01_PassTwoDimensionalArray {
       for (int j = 0; j < m[i].length; j++)
         m[i][j] = input.nextInt();
 
+    return m;*/
+    int[][] m = {
+             {1,2,3,4}
+            ,{5,6,7,8},
+            {9,1,3,1}};
+    boolean isUsingScanner = false;
+    if(isUsingScanner){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a 3 by 4 matrix row by row: ");
+        m = new int[3][4];
+
+        for (int i = 0; i < m.length; i++)
+          for (int j = 0; j < m[i].length; j++)
+            m[i][j] = input.nextInt();
+    }
     return m;
   }
 
