@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class _09_06_2_RandomInt {
     public static void main(String args[]) {
-        Random generator = new Random(500);
+        Random generator = new Random(1);
         int loop = 5;
         System.out.print("From generator int: ");
         for (int i = 0; i < loop; i++){

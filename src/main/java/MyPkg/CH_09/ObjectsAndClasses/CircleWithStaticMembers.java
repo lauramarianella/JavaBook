@@ -16,6 +16,7 @@ public class CircleWithStaticMembers{//Listing 9.6
   /** The number of the objects created */
   static int numberOfObjects = 0;
 
+
   /** Construct a circle with radius 1 */
   CircleWithStaticMembers () {
     radius = 1.0;
