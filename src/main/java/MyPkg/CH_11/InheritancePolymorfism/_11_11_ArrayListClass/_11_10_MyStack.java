@@ -3,7 +3,7 @@ package MyPkg.CH_11.InheritancePolymorfism._11_11_ArrayListClass;
 
 import java.util.ArrayList;
 
-public class _11_10_MyStack {
+public class _11_10_MyStack{
   private ArrayList<Object> list = new ArrayList<>();
 
   public boolean isEmpty() {
