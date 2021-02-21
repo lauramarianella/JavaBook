@@ -29,13 +29,11 @@ public class _12_07_CircleWithException {
   }
 
   /** Set a new radius */
-  public void setRadius(double newRadius)
-      throws IllegalArgumentException {
+  public void setRadius(double newRadius) throws IllegalArgumentException {
     if (newRadius >= 0)
       radius = newRadius;
     else
-      throw new IllegalArgumentException(
-        "Radius cannot be negative");
+      throw new IllegalArgumentException("Radius cannot be negative");
   }
 
   /** Return numberOfObjects */
