@@ -1,6 +1,6 @@
 package MyPkg.CH_12.ExceptionHandlingAndTextIO;
 
-public class CircleWithRadiusException {
+public class _12_11_CircleWithRadiusException {
   /** The radius of the circle */
   private double radius;
 
@@ -8,17 +8,16 @@ public class CircleWithRadiusException {
   private static int numberOfObjects = 0;
 
   /** Construct a circle with radius 1 */
-  public CircleWithRadiusException() {
+  public _12_11_CircleWithRadiusException() {
     this(1.0);
   }
 
   /** Construct a circle with a specified radius */
-  public CircleWithRadiusException(double newRadius) {
+  public _12_11_CircleWithRadiusException(double newRadius) {
     try {
       setRadius(newRadius);
       numberOfObjects++;
-    }
-    catch (_12_10_InvalidRadiusException ex) {
+    }catch (_12_10_InvalidRadiusException ex) {
       ex.printStackTrace();
     }
   }
@@ -29,8 +28,7 @@ public class CircleWithRadiusException {
   }
 
   /** Set a new radius */
-  public void setRadius(double newRadius)
-      throws _12_10_InvalidRadiusException {
+  public void setRadius(double newRadius) throws _12_10_InvalidRadiusException {
     if (newRadius >= 0)
       radius =  newRadius;
     else

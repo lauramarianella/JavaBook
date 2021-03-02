@@ -5,18 +5,20 @@
  */
 package MyPkg.CH_12.ExceptionHandlingAndTextIO;
 
-public class TestCircleWithRadiusException {
-  /** Main method */
+
+public class _12_11_TestCircleWithCustomException {
+/** Main method */
   public static void main(String[] args) {
     try {
-      CircleWithRadiusException c1 = new CircleWithRadiusException(5);
+      _12_11_CircleWithRadiusException c1 = new _12_11_CircleWithRadiusException(5);
       c1.setRadius(-5);
-      CircleWithRadiusException c3 = new CircleWithRadiusException(0);
-    }catch (_12_10_InvalidRadiusException ex) {
+      _12_11_CircleWithRadiusException c3 = new _12_11_CircleWithRadiusException(0);
+    }
+    catch (_12_10_InvalidRadiusException ex) {
       System.out.println(ex);
     }
 
     System.out.println("Number of objects created: " +
-      CircleWithRadiusException.getNumberOfObjects());
+      _12_11_CircleWithRadiusException.getNumberOfObjects());
   }
 }

@@ -10,7 +10,7 @@ package MyPkg.CH_13.AbstractInterface._13_01_Abstract;
  * @author laura
  */
 public class ComparingClassVsAbstractClass_Abs {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         GeometricObject go;//= new GeometricObject();
 
         Circle c = new Circle();
@@ -39,5 +39,5 @@ class Rectangle extends GeometricObject{
     @Override
     public String whoAmI() {
       return "Rectangle";
-    }
+    }*/
 }

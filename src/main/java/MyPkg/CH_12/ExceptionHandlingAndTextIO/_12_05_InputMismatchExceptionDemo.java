@@ -15,7 +15,7 @@ public class _12_05_InputMismatchExceptionDemo {
 
     do {
       try {
-        System.out.print("Enter an integer: ");
+        System.out.println("Enter an integer: ");
         int number = input.nextInt();
   
         // Display the result
