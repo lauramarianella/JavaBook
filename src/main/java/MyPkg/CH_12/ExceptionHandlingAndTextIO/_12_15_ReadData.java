@@ -11,7 +11,7 @@ public class _12_15_ReadData {
     static String path = "C:\\Users\\laura\\NetBeansProjects\\CH12TextIO\\";
     public static void main(String[] args) throws Exception {
         // Create a File instance
-        java.io.File file = new java.io.File("scores.txt");
+        java.io.File file = new java.io.File(path+"scores.txt");
 
         // Create a Scanner for the file
         Scanner input = new Scanner(file);
