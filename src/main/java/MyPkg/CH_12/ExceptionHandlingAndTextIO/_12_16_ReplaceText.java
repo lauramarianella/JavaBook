@@ -12,10 +12,10 @@ import java.util.Scanner;
 public class _12_16_ReplaceText {
     static String path = "C:\\Users\\laura\\NetBeansProjects\\CH12TextIO\\";
     public static void main(String[] args) throws Exception {
-        String[] args2 = {path+"scores.txt", path+"scoresResult.txt", "this", "that"};
+        String[] myValues = {path+"scores.txt", path+"scoresResult.txt", "yy", "zz"};
         
         // Check command line parameter usage
-        args = args2;
+        //args = args2;
         /*if (args.length != 4) {
           System.out.println(
             "Usage: java ReplaceText sourceFile targetFile oldStr newStr");
@@ -23,14 +23,14 @@ public class _12_16_ReplaceText {
         }*/
 
         // Check if source file exists
-        File sourceFile = new File(args[0]);
+        File sourceFile = new File(myValues[0]);
         if (!sourceFile.exists()) {
-          System.out.println("Source file " + args[0] + " does not exist");
+          System.out.println("Source file " + myValues[0] + " does not exist");
           System.exit(2);
         }
 
         // Check if target file exists
-        File targetFile = new File(args[1]);
+        File targetFile = new File(myValues[1]);
         /*if (targetFile.exists()) {
           System.out.println("Target file " + args[1] + " already exists");
           System.exit(3);
@@ -43,7 +43,7 @@ public class _12_16_ReplaceText {
         ) {        
           while (input.hasNext()) {
             String s1 = input.nextLine();
-            String s2 = s1.replaceAll(args[2], args[3]);
+            String s2 = s1.replaceAll(myValues[2], myValues[3]);
             output.println(s2);
           }
         }

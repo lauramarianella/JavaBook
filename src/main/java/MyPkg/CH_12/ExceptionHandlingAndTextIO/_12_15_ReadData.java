@@ -8,10 +8,10 @@ package MyPkg.CH_12.ExceptionHandlingAndTextIO;
 import java.util.Scanner;
 
 public class _12_15_ReadData {
-    static String path = "C:\\Users\\laura\\NetBeansProjects\\CH12TextIO\\";
+    static String path = "C:\\Users\\laura\\a\\";//"c:\\Users\\laura\\NetBeansProjects\\CH12TextIO\\";
     public static void main(String[] args) throws Exception {
         // Create a File instance
-        java.io.File file = new java.io.File(path+"scores.txt");
+        java.io.File file = new java.io.File(path+"_12_03.txt");
 
         // Create a Scanner for the file
         Scanner input = new Scanner(file);

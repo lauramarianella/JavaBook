@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class _12_13_WriteData {
     static String path = "C:\\Users\\laura\\NetBeansProjects\\CH12TextIO\\";
-    public static void main(String[] args) /*throws java.io.IOException*/ {
+    public static void main(String[] args) /*throws java.io.IOException*/{
         java.io.File file = new java.io.File(path + "scores.txt");
         /*if (file.exists()) {
           System.out.println("File already exists");
