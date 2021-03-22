@@ -32,18 +32,34 @@ class GeometricObject{
     String whoAmI() {
       return "Geometric Object";
     }
+    double getArea(){
+        return 0;
+    }
 }
 
 class Circle extends GeometricObject{
+    double radius;
+    
     @Override
     String whoAmI() {
       return "Circle";
     }
+    double getArea(){
+        return Math.PI * Math.pow(radius,2);
+    }
 }
 
 class Rectangle extends GeometricObject{
+    double lenght;
+    double width;
+    
     @Override
     String whoAmI() {
       return "Rectangle";
+    }
+    
+    @Override
+    double getArea(){
+        return this.lenght*this.width;
     }
 }
