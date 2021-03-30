@@ -28,7 +28,7 @@ public class ComparingClassVsAbstractClass {
     }
 }
 
-class GeometricObject{
+class GeometricObject{   
     String whoAmI() {
       return "Geometric Object";
     }
@@ -44,6 +44,7 @@ class Circle extends GeometricObject{
     String whoAmI() {
       return "Circle";
     }
+
     double getArea(){
         return Math.PI * Math.pow(radius,2);
     }

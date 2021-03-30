@@ -13,7 +13,7 @@ package MyPkg.CH_13.AbstractInterface._13_01_Abstract;
 public class _13_5_WithPI {
 
     public static void main(String[] args) {
-        double pi = Math.PI;
+        double pi = Math.PI;//3.14..
         
         Number numberAsType = pi;
 
